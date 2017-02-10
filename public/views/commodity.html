@@ -1,0 +1,95 @@
+<!-- commodity page -->
+<div class="container commodity" ng-controller="commodity">
+	<div class="nav-min">
+		<a ui-sref="index">
+			<i class="fa fa-home"></i><span>首页</span>
+		</a>
+		<a ui-sref="repertory({cid:{{categoryOneData[0].cid}},classid:''})">
+			<i class="fa fa-angle-right"></i><span>{{categoryOneData[0].category}}</span>
+		</a>
+		<a href="javaScript:;" ng-repeat="classify in classify" ng-hide="{{classify.classid!=classid}}">
+			<i class="fa fa-angle-right"></i><span>{{classify.class}}</span>
+		</a>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+			<div class="category-list">
+				<dl>
+					<dt>{{categoryOneData[0].category}}</dt>
+					<dd ng-repeat="classify in categoryOneData[0].classify" ui-sref="repertory({cid:{{categoryOneData[0].cid}},classid:classify.classid})">{{classify.class}}</dd>
+				</dl>
+			</div>
+			<div class="category-hot">
+				<span>热销商品</span>
+				<section>
+					<span class="commodity-img">
+						<img src="images/products/21031.jpg">
+					</span>
+					<span class="commodity-title">小米笔记本air 13.3寸超极笔记本电脑</span>
+					
+					<span class="commodity-price"><i>￥</i>4949</span>
+				</section>
+			</div>
+		</div>
+		<div class="col-md-10">
+			<div class="category-filter">
+				<div class="filter-title">
+					<span>商品筛选(共<span>{{resultCount?resultCount:0}}</span>件商品)</span>
+					<span class="resize">重置筛选 <i class="fa fa-caret-right"></i></span>
+					<div class="clear"></div>
+				</div>
+				<div class="filter-options">
+					<div class="filter-selected">您已选择:
+						<span></span>
+					</div>
+					<div class="filter-options-item">
+						<div ng-show="isClassify">
+
+							<ul>
+								<li ng-repeat="classify in categoryOneData[0].classify" ui-sref="repertory({cid:{{categoryOneData[0].cid}},classid:classify.classid})"><a>{{classify.class}}</a></li>
+							</ul>
+						</div>
+						<div ng-hide="isClassify" class="commodity-brand">
+							<label>品牌</label>
+							<div ng-repeat="commodity in commoditys" ng-show="commodity.brand">
+							<input type="checkbox"  ng-checked="isSelected(commodity.commodityid)" ng-click="updateSelection($event,commodity.commodityid)" name="{{commodity.commodityid}}" id="{{commodity.commodityid}}" ><span class="brand-item"><label for="{{commodity.commodityid}}">{{commodity.brand}}</label></span></div>
+						</div>
+						<div ng-hide="isClassify" class="commodity-price">
+							<label>价格</label>
+							<div >
+								<input type="checkbox" ng-checked="pricefilter(lowPrice)" name="lowPrice" id="lowPrice" ><span class="price-item"><label for="lowPrice">2000以下</label></span>
+							</div>
+							<div >
+								<input type="checkbox" ng-checked="pricefilter(middlePrice)" name="middlePrice" id="middlePrice" ><span class="price-item"><label for="middlePrice">2000-4000</label></span>
+							</div>
+							<div >
+								<input type="checkbox" ng-checked="pricefilter(highPrice)" name="highPrice" id="highPrice" ><span class="price-item"><label for="highPrice">4000以上</label></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="commodity-con">
+				<section class="commodity-item" ng-repeat="commodityitem in commoditys | commodityfilter" commodityitem>
+					<span ui-sref="productDetails({commodityid:{{commodityitem.commodityid}}})">
+						<span class="commodity-item-img">
+							<img src="{{commodityitem.imgThumUrl}}">
+						</span>
+						<span class="commodity-item-title">{{commodityitem.commodityName}}</span>
+						<span class="commodity-item-price"><i>￥</i>{{commodityitem.price}}</span>
+					</span>
+					<span class="commodity-item-add-shoppingCart">
+						<span>
+							<i class="plus" ng-click="cartMinu()" onselectstart="return false">-</i>
+							<input type="number" name="cartCount" ng-model="cartCount" max="{{commodityitem.inventory}}" min="1"/>
+							<i class="minu" ng-click="cartPlus()" onselectstart="return false">+</i>
+						</span>
+						<span ng-click="add-cart()" class=" btn btn-warning add-shoppingCart" add-cart>
+							加入购物车
+						</span>
+					</span>
+				</section>
+			</div>
+		</div>
+	</div>
+</div>

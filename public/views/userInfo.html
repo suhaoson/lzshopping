@@ -1,0 +1,39 @@
+<!-- user info page -->
+
+<div class="alter-con" ng-controller="UserInfoCtrl">
+	<div class="user-info-title"><span>个人信息</span><span>请尽量完整填写您的个人信息，方便店家与您联系。</span></div>
+			<form name="form" ng-submit="alterUserInfo()" novalidate> 
+				
+				<div>
+					<label for="username">登录账号:</label>
+					<input type="text" name="username" ng-model="userInfoData.username" class="username" id="username" disabled />
+				</div>
+				<div>
+					<label for="name">姓名:</label>
+					<input type="text" name="name" ng-model="userInfoData.name" class="name" id="name" placeholder="请输入中文" pattern="^[\u4E00-\u9FA5]{2,6}" required ng-class="form.name.$invalid&&form.name.$dirty?'error':''"/>
+				</div>
+				<div>
+					<label for="address">联系地址:</label>
+					<input type="text" name="address" ng-model="userInfoData.address" class="address" id="address" pattern="^[\u4E00-\u9FA5]{4,12}" required ng-class="form.address.$invalid&&form.address.$dirty?'error':''"/>
+				</div>
+				<div>
+					<label for="telephone">联系方式:</label>
+					<input type="number" name="telephone" ng-model="userInfoData.telephone" class="telephone" id="telephone" pattern="[0-9]{6,11}" pattern="^[\u4E00-\u9FA5]{4,6}" required ng-class="form.telephone.$invalid&&form.telephone.$dirty?'error':''"/>
+				</div>
+				<div>
+					<label for="zCode">邮编:</label>
+					<input type="number" name="zCode" ng-model="userInfoData.zCode" class="zCode" id="zCode" pattern="[0-9]{6}" ng-class="form.zCode.$invalid&&form.zCode.$dirty?'error':''"/>
+				</div>
+				<div>
+					<label for="birthday">出生日期:</label>
+					<input type="date" name="birthday" ng-model="userInfoData.birthday" class="birthday" id="birthday" ng-class="form.birthday.$invalid&&form.birthday.$dirty?'error':''"/>
+				</div>
+				<!--<div><label for=""></label></div>-->
+				
+				<div>
+					<input type="submit" name="login" class="btn btn-warning" value="保存" ng-disabled="form.$invalid"/>
+				</div>
+			
+				
+			</form>
+		</div>

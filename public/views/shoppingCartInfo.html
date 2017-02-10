@@ -1,0 +1,66 @@
+<!-- shoppingCartInfo -->
+<div class="container shoppingCart" ng-controller="ShoppingCartCtrl">
+	<div class="shoppingCart-title">
+		<span class='fa fa-shopping-cart'></span><h3>购物车</h3>
+	</div>
+	<div class="shoppingCart-nav">
+		<ul>
+			<li  ui-sref="shoppingCart"><span><i class="fa fa-check-square-o"></i>购物车</span></li>
+			<li><i class="fa fa-long-arrow-right"></i></li>
+			<li><span><i class="fa fa-check-square-o"></i>填写和提交订单信息</span></li>
+			<li><i class="fa fa-long-arrow-right"></i></li>
+			<li><span><i class="fa fa-check-square-o"></i>成功提交订单信息</span></li>
+		</ul>
+	</div>
+	<div ui-view>
+			<div class="shoppingCart-sub-title"><h4>已选择商品</h4></div>
+			<div>
+				<div class="shoppingCart-list">
+					<table>
+						<thead>
+							<td class="commodityName">商品</td>
+							<td class="commodityPrice">销售价</td>
+							<td class="commodityCount">数量</td>
+							<td class="commodityCoupon">优惠金额</td>
+							<td class="commodityBonus">积分</td>
+							<td class="commodityMoney">小计</td>
+							<td class="commodityOpacation">操作</td>
+						</thead>
+						<tr ng-repeat="commodityitem in commoditys" cartitem>
+							<td class="commodityName" >
+								<img src="{{commodityitem.imgThumUrl}}">
+								<span>{{commodityitem.commodityName}}</span>
+							</td>
+							<td class="commodityPrice"><i>￥</i><span>{{commodityitem.price}}</span></td>
+							<td>
+								<span class="commodity-item-add-shoppingCart">								
+									<span>
+										<i class="plus" ng-click="cartMinu()" onselectstart="return false">-</i>
+										<input type="text" name="cartCount" ng-model="cartCount" disabled max="{{commodity.inventory}}" min="1" />
+										<i class="minu" ng-click="cartPlus()" onselectstart="return false">+</i>
+									</span>
+								</span>
+							</td>
+							<td class="commodityCoupon"><i>￥</i><span>0.00</span></td>
+							<td class="commodityBonus">-</td>
+							<td class="commodityMoney"><i></i><span ng-model="subTatol" ng-bind="commodityitem.price*cartCount?commodityitem.price*cartCount:commodityitem.price"></span></td>
+							<td class="commodityOpacation"><a>收藏</a><a remover-item-cart>移除</a></td>
+						</tr>
+					</table>
+				</div>
+				<div class="shoppingCart-footer" ng-hide="isCartEmpty">
+					<div clear-all-cart class="clearCart" >
+						<span>清空购物车</span>
+					</div>
+					<div class="shoppingCart-operation">
+						<span class="totalMoney" ng-model="totalMoney"><i>总额:￥</i>{{totalMoney}}</span>
+						<span class="continueBuy">继续购物</span>
+						<span create-order-form class="gotoOrderForm" >提交订单</span>
+					</div>
+					<div class="clear"></div>
+		
+				</div>
+		</div>
+	
+	</div>
+</div>

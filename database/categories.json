@@ -1,0 +1,236 @@
+{ 
+    "_id" : "ry1kLYure", 
+    "category" : "手机数码", 
+    "cid" : NumberInt(1), 
+    "classify" : [
+        {
+            "class" : "手机", 
+            "classid" : NumberInt(101)
+        }, 
+        {
+            "class" : "智能摄像", 
+            "classid" : NumberInt(102)
+        }, 
+        {
+            "class" : "移动硬盘", 
+            "classid" : NumberInt(103)
+        }, 
+        {
+            "class" : "智能手环", 
+            "classid" : NumberInt(104)
+        }, 
+        {
+            "class" : "单电微单", 
+            "classid" : NumberInt(105)
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "SkgB0o_Hx", 
+    "category" : "服饰箱包", 
+    "cid" : NumberInt(2), 
+    "classify" : [
+        {
+            "class" : "男装", 
+            "classid" : NumberInt(201)
+        }, 
+        {
+            "class" : "女装", 
+            "classid" : 202.0
+        }, 
+        {
+            "class" : "内衣", 
+            "classid" : 203.0
+        }, 
+        {
+            "class" : "男鞋", 
+            "classid" : 204.0
+        }, 
+        {
+            "class" : "女鞋", 
+            "classid" : 205.0
+        }, 
+        {
+            "class" : "童装", 
+            "classid" : 206.0
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "SJi3RodSl", 
+    "category" : "电脑办公", 
+    "cid" : NumberInt(3), 
+    "classify" : [
+        {
+            "class" : "笔记本", 
+            "classid" : 301.0
+        }, 
+        {
+            "class" : "平板电脑", 
+            "classid" : 302.0
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "HJG-y2drg", 
+    "category" : "母婴玩具", 
+    "cid" : NumberInt(4), 
+    "classify" : [
+        {
+            "class" : "纸尿裤", 
+            "classid" : 401.0
+        }, 
+        {
+            "class" : "奶瓶", 
+            "classid" : 402.0
+        }, 
+        {
+            "class" : "奶粉", 
+            "classid" : 403.0
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "rJdSyhurg", 
+    "category" : "食品酒水", 
+    "cid" : NumberInt(5), 
+    "classify" : [
+        {
+            "class" : "茶叶", 
+            "classid" : 501.0
+        }, 
+        {
+            "class" : "酒", 
+            "classid" : 502.0
+        }, 
+        {
+            "class" : "面包", 
+            "classid" : 503.0
+        }, 
+        {
+            "class" : "零食", 
+            "classid" : 504.0
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "ByDJg3OBx", 
+    "category" : "美容护肤", 
+    "cid" : NumberInt(6), 
+    "classify" : [
+        {
+            "class" : "面膜", 
+            "classid" : 601.0
+        }, 
+        {
+            "class" : "洁面乳", 
+            "classid" : 602.0
+        }, 
+        {
+            "class" : "面霜", 
+            "classid" : 603.0
+        }, 
+        {
+            "class" : "沐浴露", 
+            "classid" : 604.0
+        }, 
+        {
+            "class" : "牙膏", 
+            "classid" : 605.0
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "HyfVenOSg", 
+    "category" : "家用电器", 
+    "cid" : NumberInt(7), 
+    "classify" : [
+        {
+            "class" : "电视", 
+            "classid" : 701.0
+        }, 
+        {
+            "class" : "电饭煲", 
+            "classid" : 702.0
+        }, 
+        {
+            "class" : "电磁炉", 
+            "classid" : 703.0
+        }, 
+        {
+            "class" : "吹风机", 
+            "classid" : 704.0
+        }, 
+        {
+            "class" : "扫地机", 
+            "classid" : 705.0
+        }, 
+        {
+            "class" : "空气净化器", 
+            "classid" : 706.0
+        }, 
+        {
+            "class" : "净水机", 
+            "classid" : 707.0
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "r1uOxnuHl", 
+    "category" : "居家用品", 
+    "cid" : NumberInt(8), 
+    "classify" : [
+        {
+            "class" : "保温杯", 
+            "classid" : 801.0
+        }, 
+        {
+            "class" : "茶具", 
+            "classid" : 802.0
+        }, 
+        {
+            "class" : "餐具", 
+            "classid" : 803.0
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "B1xCl3url", 
+    "category" : "汽配五金", 
+    "cid" : NumberInt(9), 
+    "classify" : [
+        {
+            "class" : "记录仪", 
+            "classid" : 901.0
+        }, 
+        {
+            "class" : "便民服务", 
+            "classid" : 902.0
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "S1Y-bnuBx", 
+    "category" : "运动户外", 
+    "cid" : NumberInt(10), 
+    "classify" : [
+        {
+            "class" : "跑步机", 
+            "classid" : 1001.0
+        }, 
+        {
+            "class" : "平衡车", 
+            "classid" : 1002.0
+        }
+    ], 
+    "__v" : NumberInt(0)
+}

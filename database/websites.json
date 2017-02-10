@@ -1,0 +1,94 @@
+{ 
+    "_id" : "BJL4rWg8e", 
+    "sectionName" : "header", 
+    "sid" : NumberInt(1), 
+    "hot" : [
+
+    ], 
+    "link" : [
+        "我的订单", 
+        "我的量正", 
+        "帮助中心", 
+        {
+            "联系电话" : 15566666666.0
+        }, 
+        "售后服务", 
+        "收藏"
+    ], 
+    "classify" : [
+        {
+            "classid" : NumberInt(101), 
+            "class" : "手机"
+        }, 
+        {
+            "classid" : NumberInt(102), 
+            "class" : "智能摄像"
+        }, 
+        {
+            "classid" : NumberInt(103), 
+            "class" : "移动硬盘"
+        }, 
+        {
+            "classid" : NumberInt(104), 
+            "class" : "智能手环"
+        }, 
+        {
+            "classid" : NumberInt(105), 
+            "class" : "单电微单"
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "B1bTLMgIl", 
+    "sectionName" : "main", 
+    "sid" : NumberInt(2), 
+    "hot" : [
+        {
+            "imgurl" : [
+                21010110000.0, 
+                21010110001.0, 
+                21010130001.0
+            ]
+        }, 
+        {
+            "imgurl" : [
+                21020630001.0, 
+                21020620000.0
+            ]
+        }, 
+        {
+            "imgurl" : [
+                21030110000.0, 
+                21030130000.0, 
+                21030210000.0
+            ]
+        }
+    ], 
+    "link" : [
+
+    ], 
+    "classify" : [
+        {
+            "classid" : NumberInt(101), 
+            "class" : "手机"
+        }, 
+        {
+            "classid" : NumberInt(102), 
+            "class" : "智能摄像"
+        }, 
+        {
+            "classid" : NumberInt(103), 
+            "class" : "移动硬盘"
+        }, 
+        {
+            "classid" : NumberInt(104), 
+            "class" : "智能手环"
+        }, 
+        {
+            "classid" : NumberInt(105), 
+            "class" : "单电微单"
+        }
+    ], 
+    "__v" : NumberInt(0)
+}

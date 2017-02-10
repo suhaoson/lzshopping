@@ -1,0 +1,141 @@
+<!-- order form commodity -->
+<div class="orderFormInfo" ng-app="OrderForm" ng-controller="OrderFormCtrl">
+	<div class="shoppingCart-sub-title"><h5>填写和提交订单信息</h5></div>
+			<form name="form" ng-submit="submitOrder()" novalidate>
+				<div>
+					<div class="order-title"><span>收货信息</span></div>
+					<div class='receipterInfo orderSection'   order-info-con>
+						<div class="selectLocation">
+							<label>收货地区:</label>
+							<div ng-show="isEnsure">
+								<input type="text" name="province" id="province" ng-model="province">
+								<input type="text" name="city" id="city" ng-model="city">
+								<input type="text" name="street" id="street" ng-model="street">
+							</div>
+							<div  ng-hide="isEnsure">
+								<select ng-model="province">
+									<option selected value="--">-请选择-</option>
+									<option>北京</option>
+									<option>上海</option>
+									<option>广东</option>
+								</select>
+								<select ng-model="city">
+									<option>北京</option>
+									<option></option>
+									<option></option>
+								</select>
+								<select ng-model="street">
+									<option>朝阳区</option>
+									<option></option>
+									<option></option>
+								</select>
+							</div>
+							
+							<span></span>
+						</div>
+						<div>
+							<label for="address">收货地址:</label>
+							<input type="text" name="address" ng-model="orderFormData.address" class="address" id="address" pattern="^[\u4E00-\u9FA5]{4,6}" required ng-class="form.address.$invalid&&form.address.$dirty?'error':''"/>
+						</div>
+						<div>
+							<label for="zCode">邮编:</label>
+							<input type="text" name="zCode" ng-model="orderFormData.zCode" class="zCode" id="zCode" pattern="[0-9]{6}"  ng-class="form.zCode.$invalid&&form.zCode.$dirty?'error':''"/>
+						</div>
+						<div>
+							<label for="name">收货人姓名:</label>
+							<input type="text" name="name" ng-model="orderFormData.name" class="name" id="name" placeholder="请输入中文" pattern="^[\u4E00-\u9FA5]{3,6}" required ng-class="form.name.$invalid&&form.name.$dirty?'error':''"/>
+						</div>
+						
+						<div>
+							<label for="telephone">联系方式:</label>
+							<input type="text" name="telephone" ng-model="orderFormData.telephone" class="telephone" id="telephone" pattern="^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$"  required ng-class="form.telephone.$invalid&&form.telephone.$dirty?'error':''"/>
+						</div>
+						<div>
+							<a  class="" ng-show="isEnsure">修改</a>
+							<button type="button" class="btn btn-default info-ok" ng-hide="isEnsure" ng-disabled="form.address.$invalid||form.zCode.$invalid||form.name.$invalid||form.telephone.$invalid">确定收货信息</button>
+						</div> 
+					</div>
+					<div class="order-title"><span>配送方式</span></div>
+					<div class='freightInfo orderSection'   order-info-con>
+						<table>
+							<thead>
+								<td>配送方式</td>
+								<td>运费</td>
+								<td>说明</td>
+							</thead>
+							<tr>
+								<td><input type="radio" name="ownfreight" id="ownfreight" ng-model="orderFormData.freight" value="自营配送">自营配送</td>
+								<td>￥<i>0.00</i></td>
+								<td> 本商城将根据收货人地址自动筛选速度最快、服务最好的快递进行配送。</td>
+							</tr>
+						</table>
+						<div>
+							<a class="" ng-show="isEnsure">修改</a>
+							<button type="button" class="btn btn-default info-ok" ng-disabled="!orderFormData.freight" ng-hide="isEnsure">确定配送方式</button>
+						</div> 
+					</div>
+					<div class="order-title"><span>支付方式</span></div>
+					<div class='payWay orderSection'  order-info-con>
+						<label ng-bind="orderFormData.payway" ng-show="isEnsure"></label>
+						<ul ng-hide="isEnsure">
+							<li class="zhifubao">
+								<input type="radio" name="payWay" value="支付宝" ng-model="orderFormData.payway"><label>支付宝</label>
+							</li>
+							<li class="weixin">
+								<input type="radio" name="payWay" value="微信" ng-model="orderFormData.payway"><label>微信</label>
+							</li>
+							<li class="bankCard">
+								<input type="radio" name="payWay" value="银联" ng-model="orderFormData.payway"><label>银联</label>
+							</li>
+						</ul>
+						<div>
+							<a class="" ng-show="isEnsure">修改</a>
+							<button type="button" class="btn btn-default info-ok" ng-hide="isEnsure" ng-disabled="!orderFormData.payway">确定支付方式</button>
+						</div> 
+					</div>
+					<div class="commoditys-list orderSection"></div>
+					<div class="order-title"><span>商品清单</span></div>
+					<div class="orderSection">
+						<div class="shoppingCart-list">
+							<table>
+								<thead>
+									<td class="commodityName">商品</td>
+									<td class="commodityPrice">销售价</td>
+									<td class="commodityCount">数量</td>
+									<td class="commodityCoupon">优惠金额</td>
+									<td class="commodityBonus">积分</td>
+									<td class="commodityMoney">小计</td>
+								</thead>
+								<tr ng-repeat="commoditys in commoditys">
+									<td class="commodityName">
+										<img src="{{commoditys.imgThumUrl}}">
+										<span>{{commoditys.commodityName}}</span>
+									</td>
+									<td class="commodityPrice"><i>￥</i><span>{{commoditys.price}}</span></td>
+									<td>
+										<span class="commodity-item-add-shoppingCart">
+											{{commoditys.cartCount}}
+										</span>
+									</td>
+									<td class="commodityCoupon"><i>￥</i><span>0.00</span></td>
+									<td class="commodityBonus">-</td>
+									<td class="commodityMoney"><i></i><span>{{commoditys.price*commoditys.cartCount}}</span></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+						<div class="shoppingCart-footer">
+						<div>
+							<span class="freight"><i>运费:￥</i>0.00</span>
+							<span class="commodityMoney"><i>商品总额:￥</i>{{totalMoney}}</span>
+						</div>
+						<div class="shoppingCart-operation">
+							<span class="totalMoney"><i>总金额:￥</i>{{totalMoney}}</span>
+							<span class="continueBuy" ui-sref="shoppingCart">返回购物车</span>
+							<input type="submit" class="payOrderForm btn btn-danger" ng-disabled="!(isEnsureReceipterinfo&&isEnsureFreight&&isEnsurePayWay)" value="下单结算">
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</form>
+</div>

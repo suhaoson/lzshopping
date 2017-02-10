@@ -1,0 +1,64 @@
+<!--/**
+ * home page
+ */-->
+
+	<header ui-view="header" ng-app="Header" class="">
+	
+	</header>
+	<nav ui-view="nav">
+	
+	</nav>
+	<div class="container">
+		<div class="row">
+			<banner ui-view="banner" class="col-md-8 banner-left col-md-push-2">
+		
+			</banner>
+			<div class="banner-right col-md-2 col-md-push-2">
+			<div class="charact">
+				<div class="title">
+					<span>在线咨询</span>
+					<span><span class="fa fa-phone"></span><i>15566666666</i></span>
+				</div>
+				<div class="charact-item">
+					<section onclick="window.open('QR.html','_blank','scrollbars=0,resizable=0;width=100');return    false">
+							<span class="fa fa-qq"></span>
+							<i>商务顾问</i>
+					</section><section>
+						<span class="fa fa-qq"></span>
+						<i>售前客服</i>
+					</section><section>
+						<span class="fa fa-qq"></span>
+						<i>售后客服</i>
+					</section><section>
+						<span class="fa fa-weibo"></span>
+						<i>官方微博</i>
+					</section><section>
+						<span class="fa fa-weixin"></span>
+						<i>官方微信</i>
+					</section><section>
+						<span class="fa fa-weixin"></span>
+						<i>红包群</i>
+					</section>
+				</div>
+			</div>
+			<div class="notice">
+				<div class="title">
+					<span>最新公告</span>
+					<span><i><a href="#">更多>></a></i></span>
+				</div>
+				<div class="notice-item">
+					<ul>
+						<li><a href="#">网站更新通知</a></li>
+					</ul>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<main ui-view="main">
+	
+	</main>
+	<footer ui-view="footer">
+	
+	</footer>

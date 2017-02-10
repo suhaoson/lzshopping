@@ -1,0 +1,214 @@
+{ 
+    "_id" : "r1SkX75Sg", 
+    "commodityName" : "Meizu/魅族 魅蓝note5全网通4G手机", 
+    "price" : NumberInt(1199), 
+    "brand" : "魅族", 
+    "options" : {
+        "color" : [
+            "白色"
+        ], 
+        "ROM" : [
+            "16G"
+        ]
+    }, 
+    "inventory" : NumberInt(50), 
+    "classid" : NumberInt(101), 
+    "commodityid" : NumberInt(10110000), 
+    "imgUrl" : "", 
+    "imgThumUrl" : "images/products/210/21010110000.jpg", 
+    "comment" : [
+
+    ], 
+    "cid" : "ry1kLYure", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "HypuJpoHe", 
+    "commodityName" : "小米笔记本air 13.3寸超极笔记本电脑", 
+    "price" : NumberInt(4949), 
+    "brand" : "小米", 
+    "options" : {
+        "ROM" : [
+            "8G+256G"
+        ], 
+        "color" : [
+            "白色", 
+            "银色"
+        ]
+    }, 
+    "inventory" : NumberInt(105), 
+    "classid" : NumberInt(301), 
+    "commodityid" : NumberInt(30110000), 
+    "imgUrl" : "", 
+    "imgThumUrl" : "images/products/210/21030110000.jpg", 
+    "comment" : [
+        {
+            "content" : "总体说吧，性价比还是很高的。我购买的初衷是既可以偶尔放松耍耍游戏，平时主要是实现高效快捷的办公，可以说两者都可以兼得。可能在运行散热方面会有些瑕疵，但是，同类型的机子比起来，应该可以说是比较中高端的选择了，价格也很实惠中庸，很给力，主要看重轻薄。", 
+            "uid" : "HJBQ4ESHl"
+        }
+    ], 
+    "cid" : "SJi3RodSl", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "HywWyJxIx", 
+    "commodityName" : "Meizu/魅族 魅蓝5 全网通4G手机", 
+    "price" : NumberInt(999), 
+    "brand" : "魅族", 
+    "options" : {
+        "ROM" : [
+            "32G"
+        ], 
+        "color" : [
+            "黑色", 
+            "白色", 
+            "银色", 
+            "蓝色"
+        ]
+    }, 
+    "inventory" : NumberInt(50), 
+    "classid" : NumberInt(101), 
+    "commodityid" : NumberInt(10110001), 
+    "imgUrl" : "", 
+    "imgThumUrl" : "images/products/210/21010110001.jpg", 
+    "comment" : [
+        null
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "HkUIkygUg", 
+    "commodityName" : "Apple/苹果 iPhone SE 全网通4G手机", 
+    "price" : NumberInt(3688), 
+    "brand" : "苹果", 
+    "options" : {
+        "ROM" : [
+            "64G"
+        ], 
+        "color" : [
+            "黑色", 
+            "玫瑰金色", 
+            "银色", 
+            "金色"
+        ]
+    }, 
+    "inventory" : NumberInt(99), 
+    "classid" : NumberInt(101), 
+    "commodityid" : NumberInt(10130000), 
+    "imgUrl" : "", 
+    "imgThumUrl" : "images/products/210/21010130000.jpg", 
+    "comment" : [
+        {
+            "content" : "手机收到了，很不错呦，这次再网上买的手机还送了耳机的，以前都没有的，超赞", 
+            "uid" : "HJBQ4ESHl"
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "ry-R11gUe", 
+    "commodityName" : "Apple/苹果 iPhone 7 Plus 苹果7全网通4G", 
+    "price" : NumberInt(6488), 
+    "brand" : "苹果", 
+    "options" : {
+        "ROM" : [
+            "32G", 
+            "128G"
+        ], 
+        "color" : [
+            "黑色", 
+            "玫瑰金色", 
+            "银色", 
+            "金色"
+        ]
+    }, 
+    "inventory" : NumberInt(49), 
+    "classid" : NumberInt(101), 
+    "commodityid" : NumberInt(10130001), 
+    "imgUrl" : "", 
+    "imgThumUrl" : "images/products/210/21010130001.jpg", 
+    "comment" : [
+        null
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "S1epl1lUl", 
+    "commodityName" : "秋冬季婴儿衣服宝宝内衣套装0-3个月", 
+    "price" : NumberInt(78), 
+    "brand" : "", 
+    "options" : {
+        "size" : [
+            "8码"
+        ], 
+        "color" : [
+            "粉色", 
+            "绿色"
+        ]
+    }, 
+    "inventory" : NumberInt(49), 
+    "classid" : NumberInt(206), 
+    "commodityid" : NumberInt(20630001), 
+    "imgUrl" : "", 
+    "imgThumUrl" : "images/products/210/21020630001.jpg", 
+    "comment" : [
+        null
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "HJlV-yeLe", 
+    "commodityName" : "七巧豆 婴儿服饰套装礼盒", 
+    "price" : NumberInt(135), 
+    "brand" : "七巧豆", 
+    "inventory" : NumberInt(100), 
+    "classid" : NumberInt(206), 
+    "commodityid" : NumberInt(20620000), 
+    "imgUrl" : "", 
+    "imgThumUrl" : "images/products/210/21020620000.jpg", 
+    "comment" : [
+        null
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "r1x1fJlLx", 
+    "commodityName" : "Apple/苹果 MacBook Pro MF840Ch/A", 
+    "price" : NumberInt(9699), 
+    "brand" : "苹果", 
+    "inventory" : NumberInt(298), 
+    "classid" : NumberInt(301), 
+    "commodityid" : NumberInt(30130000), 
+    "imgUrl" : "", 
+    "imgThumUrl" : "images/products/210/21030130000.jpg", 
+    "comment" : [
+        null
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "HJi75JgLx", 
+    "commodityName" : "Apple/苹果 iPad Pro WLAN 配备Retina平板电脑", 
+    "price" : NumberInt(5588), 
+    "brand" : "苹果", 
+    "options" : {
+        "color" : [
+            "银色", 
+            "深空灰黑", 
+            "金色"
+        ], 
+        "ROM" : [
+            "32G", 
+            "128G"
+        ]
+    }, 
+    "inventory" : NumberInt(300), 
+    "classid" : NumberInt(302), 
+    "commodityid" : NumberInt(30210000), 
+    "imgUrl" : "", 
+    "imgThumUrl" : "images/products/210/21030210000.jpg", 
+    "comment" : [
+        null
+    ], 
+    "__v" : NumberInt(0)
+}

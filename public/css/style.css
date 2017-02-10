@@ -1,0 +1,1458 @@
+/**
+ * css样式
+ */
+
+/*宏定义样式*/
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+html{
+		font-size:16px;
+}
+body{
+	margin:0;
+	color:#333;
+	background-color:#fff;
+
+}
+ul{
+	padding-left:0;
+	margin:0;
+}
+li{
+	list-style: none;
+	display: inline-block;
+}
+a{
+	text-decoration: none;
+	color:#5a5a5a;
+}
+a:link{
+	text-decoration: none;
+}
+a:visited{
+	text-decoration: none;
+	color:#5a5a5a;
+}
+a:hover{
+	text-decoration: none;
+	cursor:pointer;
+}
+a:active{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+.clear{
+	clear:both;
+}
+/*header样式*/
+header>.header-top{
+	background-color:#f8f8f8;
+	padding:0.5rem 0.625rem;
+}
+header>.header-top>*{
+	font-size:0.87em;	
+	color:#5e5e5e;
+}
+.header-top>.container>div{
+	display: inline-block;
+}
+.header-top>.container>.top-right{
+	float:right;
+}
+.header-top>.container>.top-right a{
+	border-right:1px solid #ccc;
+	padding-right:1.31em;
+}
+.header-top>.container>.top-right li:last-of-type a,
+.header-top>.container .user li a{
+	border-right:none;
+}
+.header-top>.container>.top-left *{
+	color:#dd0000;
+}
+.header-top .user li{
+	display: block;
+	margin:0.31em auto;
+}
+
+.user{
+	position:relative;
+	padding:0 1.92em;
+}
+.user ul{
+	position:absolute;
+	background-color: #f8f7f8;
+	box-shadow:-4px 3px 4px #ccc;
+	opacity:0;
+	transition: opacity 2.0s;}
+.user:hover>ul{
+	opacity:1;
+}
+.header-top>.container>.top-right .tel span{
+	color:#204D74
+}
+.header-top>.container>.top-right .server span{
+	color:#2AABD2
+}
+.header-top>.container>.top-right .collect span{
+	color:#F0AD4E}
+.header-top>.container>.top-right a>span{
+	font-size:1.1em;
+	padding:4px 5px;
+}
+.header-top>.container>.top-right .tel i{
+	font-size: 1.25em;
+	font-weight: 600;
+	color:#dd0000;
+}
+
+.header-adv img{
+	width:100%;
+	height:100%;
+}
+.header-bottom{
+	padding-top:0.75em;
+	padding-bottom:0.625em;
+}
+.header-bottom>div{
+	display: inline-block;
+}
+.header-bottom>.search{
+	margin:0 7em;
+	border:3px solid #337ab7;
+	border-radius:2px 2px;
+}
+.header-bottom>.search input{
+	width:25.125em;
+	border:0;
+	line-height: 230%;
+	vertical-align: middle;
+}
+.header-bottom>.search button{
+	border-radius:0px;
+	width:6em;
+	border-color:transparent;
+}
+.header-bottom>.shopping-cart{
+	border:1px solid #eee;
+	background-color:#f7f7f7;
+	padding:0.62em 1em;
+	vertical-align: middle;
+	border-radius:2px 3px;
+	margin-left:158px;
+}
+.header-bottom>.shopping-cart i{
+	color:#585858;
+	font-size:0.75em
+}
+.header-bottom>.shopping-cart span{
+	vertical-align: middle;
+}
+.header-bottom>.shopping-cart:active{
+	background-color:#ccc;
+}
+
+/*nav*/
+nav.navbar-default{
+	border-color:transparent;
+	background-color:transparent;
+	border-bottom:1px solid #1985D9;
+	margin-bottom:0;
+	border-bottom-left-radius: 0; 
+}
+nav>.container{
+	padding-bottom:0;
+}
+nav div.nav-aside{
+	padding-bottom: 0;
+}
+/*nav div.nav-aside ul{
+	padding-right:0;
+	padding-left: 0;
+}*/
+nav div.nav-aside>.row{
+	padding-right:0;
+	padding-left: 0;
+	margin-left:0;
+	margin-right:0;
+}
+nav div.nav-aside li{
+	display: block;
+	padding:0 1em 1em  1em;
+	margin-top: 0.43em;
+}
+nav div.nav-aside li span{
+	vertical-align:middle;
+}
+nav div.nav-aside ul.nav-aside-category>li:hover{
+	background-color: #f4f4f4;
+}
+nav div.nav-aside ul.nav-aside-category>li:hover a,
+nav div.nav-aside ul.nav-aside-category>li:hover span
+{
+	color:#666;
+}
+nav div.nav-aside ul.nav-aside-category>li>a{
+	color:#f4f4f4;
+}
+nav div.nav-aside ul.nav-aside-category ul.nav-aside-classify li{
+	width:50%;
+	display: inline-block;
+}
+nav div.nav-aside ul.nav-aside-category ul.nav-aside-classify a{
+	font-size:.78em;
+}
+nav .nav-aside-title{
+	width:180px;
+	display: inline-block;
+}
+nav .nav-aside-class{
+	background-color:#f7f7f7;
+	/*position:absolute;*/
+	left:0;
+	display: inline-block;
+	
+}
+nav .nav-aside-class{
+	position:relative;
+	height:calc(34px *6);
+	display:none;
+}
+nav .nav-aside-class ul{
+	position:absolute;
+	display: none;
+}
+.navbar-default .navbar-nav > li > a:hover{
+	color:#1985D9;
+}
+.navbar-default .navbar-header{
+	background-color:#1985D9;
+	border-radius:3px 3px 0 0;
+	width:14.5%;
+}
+nav .navbar-default~div{
+	position:relative;
+}
+nav .navbar-default~div>.nav-aside{
+	position:absolute;
+	height:calc(34px *6);
+	width:100%;
+}
+.navbar-default .navbar-header a,
+.navbar-default .navbar-header a:hover,
+.navbar-default .navbar-header a:focus
+{
+	color:#fff;
+}
+.nav-aside ul.nav-aside-category{
+	position:relative;
+	background-color: #299Aef;
+	padding-left:0;
+	padding-right: 0;
+	width:14.4%;
+	z-index: 2;
+	left: 1px;
+}
+.nav-aside ul.nav-aside-category ul.nav-aside-classify{
+	position:absolute;
+	left:1px;
+	background-color: #f4f4f4;
+	left:164px;
+	z-index:10;
+	width:795px;
+	height:400px;
+	top:0;
+	display: none;
+}
+/*signIn*/
+main div.login-title,
+main div.register-title{
+	color:#1985D9;
+	border-bottom:1px solid #ccc;
+}
+main div.login-title>span,
+main div.register-title>span{
+	font-size: 1.5em;
+	
+}
+main div.reg-log-con,
+main div.alter-con{
+	margin-top:0.75em;
+	padding-bottom:0.74em;
+}
+main div.reg-log-con>form,
+main div.alter-con>form{
+	border:2px solid #ccc;
+	text-align: center;
+}
+main div.reg-log-con>form div.register-title,
+main div.alter-con>form div.register-title{
+	text-align: left;
+}
+main div.reg-log-con>form div.user-valid{
+	padding-top:0 !important;
+}
+main div.reg-log-con>form div.user-valid+div{
+	padding-top: 0 !important;
+}
+
+main div.reg-con form div{
+	text-align: right;
+}
+main div.reg-con form div{
+	padding:0.74em 163px 0.74em 1.357em!important;
+}
+main div.reg-log-con form>div,
+main div.alter-con form>div{
+	padding:0.74em 1.357em;
+}
+main div.reg-log-con form div input{
+	width:100%;
+}
+main div.reg-con form div input{
+	width:52%;
+}
+main div.reg-log-con form div input[name=rememberPwd],
+main div.alter-con form div input[name=rememberPwd]{
+	width:10%;
+}
+main div.reg-log-con form div input[name=rememberPwd]~label,
+main div.alter-con form div input[name=rememberPwd]~label{
+	vertical-align: middle;
+}
+main div.reg-con form div input[name=validNum]{
+	width:16%;
+}
+main div.reg-con form div input[name=agreement]{
+	width:5%;
+}
+main div.reg-con form div input[name=agreement]~label{
+	vertical-align: middle;
+}
+main div.reg-log-con form div.valid-code{
+	width:30%;
+	display: inline-block;
+}
+main div.reg-log-con .forget-pwd{
+	color:#5e5e5e;
+	padding:5px;
+	display: inline-block;
+}
+main div.other-way{
+	border-top:1px dotted #ccc
+}
+main div.other-way>div{
+	margin:0.3em 0.125em;
+	font-size: 0.9em;
+	
+}
+main div.other-way .fa-qq{
+	color:#6595f7;
+}
+main div.reg-to{
+	border-top:1px dotted #ccc;
+	background-color:#eee;
+}
+main div.reg-to>span{
+	font-size:0.71em;
+}
+main div.reg-to>span.reg-to{
+	padding:0.3em;
+	float:right;
+	vertical-align: middle;
+}
+main div.log-to{
+	margin:0.75em 0;
+	padding:4.335em 1.48em;
+	border-left:dotted 1px #ccc;
+}
+
+.error{
+	background-color:#d91f29 ;
+}
+.alert-warning{
+	position:absolute;
+	right:8%;
+}
+/*banner*/
+.carousel-con{
+	height:400px;
+	/*padding-right: 0;*/
+	padding-left:0;
+}
+.carousel-con .uib-slides>*{
+	height:400px;
+}
+.carousel-con .uib-slides img{
+	height:100%;
+	width:100%;
+	/*margin-left: 1em !important;*/
+}
+.charact .charact-item section{
+	width:27%;
+	display: inline-block;
+	text-align: center;
+	margin-left:8px;
+}
+.charact .charact-item section i{
+	font-size: 0.8em;
+	display: block;
+	-webkit-text-size-adjust:none !important;
+}
+.banner-right .title{
+	padding-left:5px;
+}
+.banner-left{
+	padding-left: 0;
+	padding-right: 0;
+}
+.banner-right{
+	padding-left: 0;
+	margin-left: 0;
+}
+.banner-right .title{
+	border-bottom: #ccc solid 1px;
+	padding-top:.74em;
+	padding-bottom:.74em;
+} 
+.banner-right .title span{
+	font-size: .98em;
+	font-weight: 580;
+}
+.banner-right .title>span:last-of-type{
+	float:right;
+	padding-right:2px;
+	color: #1985D9;
+}  
+.banner-right .title>span:last-of-type i,
+.banner-right .title>span:last-of-type a{
+	color:#dd0000;
+} 
+.banner-right .title>span:last-of-type a{
+	font-size: .74em;
+}
+.charact section{
+	margin:.74em 2px;
+	vertical-align:middle;
+}
+.charact section span{
+	display: inline-block;
+	border:2px #1985D9 solid ;
+	border-radius: 50%;
+	height: 2.1em;
+	width:2.1em;
+	vertical-align: middle;
+	padding:.35em 0;
+	font-size: 1.5em;
+	color: #1985D9;
+	margin:4px auto;
+	position:relative;
+	bottom:0;
+	transition:bottom 0.3s;
+}
+.charact section span:hover{
+	bottom:10px;
+	box-shadow:4px 5px 10px #ddd;
+}
+.banner-right .charact,
+.banner-right .notice{
+	border:1px #ccc solid ;
+}
+.banner-right .notice-item{
+	text-align: left;
+
+}
+.banner-right .notice-item ul{
+	list-style-type:circle;
+	margin:.6em;
+	font-size:0.74em;
+}
+/*main*/
+main .flash-buy{
+	padding:0;
+	margin:0 !important;
+}
+main .flash-buy-right{
+	padding:0;
+	position:relative;
+}
+main .flash-buy-right img{
+	width:100%;
+	height:12.3em;
+}
+main .hot-products{
+	margin:.74em 0;
+}
+main .hot-products .flash-buy{
+	margin:.74em;
+	border:1px #ccc solid;
+}
+main .hot-products *{
+	text-align: center;
+}
+main .hot-products .flash-buy .flash-buy-left{
+	padding:1em;
+}
+
+main .hot-products .flash-buy span{
+	display: block;
+	padding:0 0 .58em 0;
+	font-size: 0.68em;
+}
+main span.split-line{
+	width:.99em;
+	border-top:1px #1985d9 solid;
+	display: inline-block !important;
+}
+main div.flash-buy-right span.flash-buy-discount{
+	position:absolute;
+	bottom:0;
+	text-align: left;
+	padding:0 .5em;
+	background-color: #999;
+	opacity:0.6;
+	display: block;
+	width:100%;
+	color:#333;
+
+}
+main div.flash-buy-left .flash-buy-info{
+	padding-bottom: 1em;
+}
+main span.flash-buy-brand a{
+	font-size: 1.65em;
+	color:#333;
+	font-weight: 700;
+	font-family: 微软雅黑;
+}
+main div.flash-buy-brand:hover{
+	color:#999;
+	text-decoration:underline;
+
+}
+main div.flash-buy-left .buy-now a:hover{
+	text-decoration: underline;
+	color: #dd0000;
+}
+main div.hot-products div.hot-recommends{
+	margin:0.75em 0;
+}
+main div.hot-products div section.hot-recommends-item{
+	width:33.3333333%;
+	display: inline-block;
+}
+main div.hot-products div.hot-recommends-item>img{
+	height:100%;
+	width:100%;
+}
+main div.category-products-show{
+	margin:3.25em 0;
+	padding-left:0;
+	padding-right:0;
+	
+}
+main div.products-category{
+	padding-right:0;
+	padding-left:0;
+}
+main section.categorySection{
+	margin-top:0.75em;
+	margin-bottom: 0.75em;
+	border-top:2px solid #1985D9;
+	margin-left:0;
+}
+main div.category-products-show .products-category>div>section,
+main div.category-products-show .products-category>div.category-title{
+	text-align: center;
+}
+main div.category-products-show .products-category>div.category-title{
+	font-size: 1.42em;
+	font-weight:500;
+	font-family: 微软雅黑;
+	padding:.75em 0;
+	background-color: #1985D9;
+
+}
+main div.category-products-show .products-category section{
+	width:50%;
+	display: inline-block;
+	padding-top:.74em;
+	padding-bottom: .74em;
+	border-bottom: 1px solid #ccc;
+	font-size: .95em;
+}
+main div.category-products-show .products-category section:nth-of-type(2n+1){
+	border-right:1px #ccc solid;
+	border-left: 1px solid #ccc;
+}
+main div.category-products-show .carousel-con .uib-slides>*{
+	height:285px;
+}
+main div.category-products-show .carousel-con{
+	height:285px;
+	padding-right: 0;
+}
+main div.category-products-show .products-hot-bottom{
+	margin-left:-15px;
+}
+main div.category-products-show .products-hot-bottom section.products-show-item{
+	width:22.6%;
+	display: inline-block;
+	text-align: center;
+	border-right:1px solid #f7f8f7;
+	border-bottom:1px solid #f7f8f7;
+	padding-top: 1.1em;
+	padding-bottom:1.1em ;
+}
+main div.category-products-show .products-hot-bottom section.products-show-item:hover{
+	opacity:0.7;
+}
+main div.category-products-show .products-hot-bottom>div{
+	margin-left:-15px;
+	margin-top:.74em;
+	margin-bottom: .74em;
+}
+main div.category-products-show .products-hot-bottom section.products-show-item>a>img{
+	width:58%;
+	height:75%;
+	
+}
+main div.category-products-show .products-recommend{
+	padding-left: .75em;
+	padding-right:0;
+}
+main div.category-products-show section.products-recommend-item{
+	width:50%;
+	display: inline-block;
+	text-align: center;
+	padding:1.27em 0;
+	border-right:1px solid #f7f8f7;
+}
+main div.category-products-show .products-recommend section img{
+	height:17.5714em;;
+	width:100%;
+}
+main div.category-products-show .products-recommend-bottom section img{
+	height:75%;
+	width:75%;
+}
+main div.category-products-show .products-recommend-top{
+}
+/*user*/
+main div.user-con-list{
+	padding-top:1em;
+	border-left: 1px #ccc solid;
+	border-right:1px #ccc solid;
+	margin-left:1.2em;
+	width:14%;
+	padding-right: 0;
+	padding-left: 0;
+}
+main div.user-con-list dl{
+	padding-left: 1.5em;
+	border-bottom: 1px #ccc solid;
+	padding-bottom:1em;
+	margin-bottom: 0;
+	padding-top: 1.41em;
+	font-family: 微软雅黑;
+}
+main div.user-con-list dd{
+	text-align: left;
+}
+main div.user-con-list dt{
+	font-size: .98em;
+
+}
+main div.user-con-list dd{
+	font-size: .96em;
+	padding-left:1.1em;
+	margin-top:.45em;
+}
+main div.user-con{
+	padding-right:0;
+}
+main div.user-union{
+	border:1px solid #ccc;
+	background-color: #fffbe6;
+	margin:.74em auto;
+}
+main div.user-union div.user-info,
+main div.user-union div.order-form-info{
+	padding:0 2em;
+}
+main div.user-union div.user-info{
+	padding-top:2em;
+}
+main div.user-union div.order-form-info{
+	padding-bottom: 2em;
+}
+main div.user-union div.title span{
+	font-size: 1.25em;
+}
+main div.user-union div.title i{
+	color:#dd0000;
+}
+main div.user-union div.title{
+	margin:.74em 0;
+}
+main div.user-union div.outline-info{
+	margin :.45em 0;
+}
+main div.user-union div.outline-info>span{
+	display: inline-block;
+	width:50%;
+	margin:.25em 0;
+	font-size: .8em;
+}
+main div.user-union div.outline-info>span:nth-of-type(1){
+	width:100%;
+}
+main div.user-union div.order-form-info{
+	padding:.74em 2em;
+	border-top:1px #ccc solid;
+}
+main div.user-union div.order-form-info ul{
+	display: inline-block;
+}
+main div.user-union div.order-form-info ul li{
+	padding:0 .45em;
+
+}
+main div.user-union div.order-form-info span,
+main div.user-union div.order-form-info ul li a{
+	font-size:.8em;
+}
+main div.user-union div.order-form-info ul li i{
+	background-color: #aaa;
+	border-radius:5px;
+	width:2em;
+	display: inline-block;
+	text-align: center;
+}
+main div.user-order-form-outline{
+	border:1px solid #ccc;
+	margin:.74em auto;
+}
+main div.user-con table{
+	width:100%;
+}
+main div.user-con table td{
+	text-align: center;
+	font-size:.88em;
+}
+main div.user-order-form-outline div.title{
+	border-bottom: 1px solid #ccc;
+	background-color: #f4f4f4;
+	padding:.74em 2em;
+}
+main div.user-order-form-outline div.title span{
+	font-size: .9em;
+}
+main div.user-con table tr{
+	height:2.5em;
+	border-bottom: 1px solid #ccc;
+}
+main div.user-con table tr.content-null{
+	height:6em;
+}
+main div.user-con div.order-form table{
+	border:1px solid #ccc;
+}
+main div.alter-con form div input{
+	width:35%;
+}
+main div.alter-con form div input[name=username]{
+	background-color: #fff;
+	border:none;
+}
+main div.alter-con>form{
+	border:1px solid #ccc;
+}
+main div.alter-con>form{
+	padding-right:25em;
+}
+main div.user-info-title>span{
+	font-weight: 700;
+	font-size: 1.11em;
+	font-family: 微软雅黑;
+}
+main div.user-info-title>span~span{
+	border-left:1px solid #aaa;
+	font-size: .88em;
+	color:#aaa;
+	margin-left: 0.5em;
+	padding-left: 0.5em;
+}
+main div.alter-con form>div{
+	text-align: right;
+}
+main div.nav-min a>i{
+	margin-left:0.74em;
+	margin-right:0.7em;
+	margin-top:0.5em;
+	margin-bottom: 0.5em;
+}
+main div.nav-min a:first-of-type>i{
+	margin-right:0em;
+}
+main div.nav-min a span{
+	font-size: .88em;
+}
+main div div.category-list dl{
+	border:1px solid #ccc;
+	font-size: .98em;
+	font-family: 微软雅黑;
+}
+main div div.category-list dl dd{
+	border-top:1px solid #ccc;
+	padding: .45em .88em .45em 2.3em;
+	background:#f7f8f7;
+	cursor: pointer;
+}
+main div div.category-list dl dt{
+	padding:.5em .74em;
+	background-color: #ddd;
+}
+main div.commodity div.category-hot span{
+	padding:.33em .74em;
+	font-size:.8em;
+	display: block;
+}
+main div.commodity div.category-hot{
+	border:1px solid #ccc;
+}
+main div.commodity div.category-hot>span{
+	border-bottom:1px solid #ccc;
+	font-weight: 600;
+}
+main div.commodity span.commodity-img>img{
+	width:90%;
+	padding:0 .45em;
+}
+main div.commodity div.category-hot span.commodity-price{
+	color:#ee0000;
+	font-size:1.0em;
+	font-weight: 600;
+}
+main div.commodity div.category-filter{
+	border: 1px solid #ccc;
+	font-size:.8em;
+	color:#666;
+}
+main div.commodity div.category-filter div.filter-title{
+	padding:.45em .74em;
+	border-bottom: 1px solid #ccc;
+	background-color: #ddd;
+	font-weight: 600;
+	color:#333;
+}
+main div.commodity div.category-filter div.filter-title span.resize{
+	float:right;
+	vertical-align:middle;
+}
+main div.commodity div.category-filter div.filter-selected{
+	background-color: #f7f7f7;
+	padding:.45em .74em;
+
+}
+main div.commodity div.category-filter div.filter-options-item{
+	border-bottom: 1px dotted #ccc;
+	margin:.55em .23em;
+	padding:.23em .5em;
+}
+main div.commodity div.category-filter div.filter-options-item li{
+	margin:0 .88em;
+}
+main div.commodity div.category-filter div.filter-options-item span.brand-item{
+	margin:0 .88em;
+	cursor:pointer;
+}
+main div.commodity div.commodity-brand>div{
+	display: inline-block;
+}
+main div.commodity div.commodity-price>div{
+	display: inline-block;
+}
+main  span.commodity-item-add-shoppingCart span>i.plus,
+main  span.commodity-item-add-shoppingCart span>i.minu
+{
+	border:1px solid #999;
+	color:#999;
+	padding:.2em .5em;
+	cursor:pointer;
+}
+main span.commodity-item-add-shoppingCart span>i.minu
+{
+	padding:.2em .635em;
+}
+main span.commodity-item-add-shoppingCart span>input
+{
+	border:1px solid #999;
+	width:2.7em;
+	color:#999;
+	padding:.1em 0em .01em 0em;
+	text-align: center;
+}
+main div.commodity div.commodity-con section.commodity-item{
+	width:24.6%;
+	text-align: center;
+	display: inline-block;
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+main div.commodity div.commodity-con section.commodity-item span.commodity-item-title{
+	font-size:.8em;
+	color:#666;
+	height:.99em;
+	display: inline-block;
+}
+main div.commodity div.commodity-con section.commodity-item span.commodity-item-price{
+	font-size:.8em;
+	color:#dd0000;
+	display: block;
+}
+main div.commodity div.commodity-con section.commodity-item .add-shoppingCart{
+	width:7em;
+	height:2.2em;
+	font-size: .74em;
+	padding: .3em 0 .4em 0;
+	margin-left:1.6em;
+	
+}
+main div.productDetails div.commodity-img-info{
+	width:27.4em;
+}
+main div.productDetails .commodity-img-info>img{
+	border:1px solid #ccc;
+}
+main div.productDetails .commodity-imgthum-info{
+	border:1px solid #ccc;
+	margin-top:.88em;
+}
+main div.productDetails .commodity-imgthum-info{
+	border:1px solid #ccc;
+	margin-top:.88em;
+}
+main div.productDetails .commodity-imgthum-info .imgthum-pre{
+	float: left;
+	margin-top:1.5em;
+}
+main div.productDetails .commodity-imgthum-info .imgthum-last{
+	float: right;
+	margin-top:1.5em;
+	height: 100%;
+	background-color: #ddd;
+}
+main div.productDetails .commodity-imgthum-info ul{
+	height:4.25em;
+	width: 4.25em;
+	display: inline-block;
+	overflow: hidden;
+}
+main div.productDetails .commodity-imgthum-info li,
+main div.productDetails .commodity-imgthum-info li img{
+
+	height:100%;
+}
+main div.productDetails .commodity-imgthum-info li img{
+	border:1px solid #ccc;
+	margin:0 .5em;
+}
+main div.productDetails div.commodity-info div.info-title{
+	font-size: 1.2em;
+	font-weight: 700;
+}
+main div.productDetails div.commodity-info-attrs>div>span{
+	font-size:.78em;
+	color:#999;
+	display: block;
+	margin-top:.88em;
+}
+main div.productDetails div.commodity-info-attrs>div>span.commodityid{
+	display: inline-block;
+	margin-right: 17.5em;
+}
+main div.productDetails div.commodity-info-attrs>div>span.commodity-info-brand{
+	display: inline-block;
+}
+main div.productDetails div.commodity-info-attrs span i{
+	padding-left:0.5em;
+
+}
+main div.productDetails div.commodity-info-attrs span.commodity-info-price i{
+	font-size:3em;
+	color:#dd0000;
+
+}
+main div.productDetails div.commodity-info-attrs~div{
+	border:#ffe6ca solid 1px;
+	padding:1em 1.1em;
+	background-color:#fffefd;
+	margin-top:1.2em;
+}
+main div.productDetails div.commodity-info-attrs~div span{
+	font-size:.78em;
+	display: block;
+	padding-bottom: .88em;
+
+}
+main div.productDetails div.commodity-info-attrs~div span.commodity-inventory{
+	display: inline-block;
+	padding-left:.5em;
+}
+main div.productDetails div.commodity-info-attrs~div span.commodity-item-add-shoppingCart>span{
+	display: inline-block;
+}
+main div.productDetails div.commodity-info-attrs~div span.commodity-inventory{
+	padding-left:.5em;
+	color:#999;
+}
+main div.productDetails div.commodity-info-attrs~div span.commodity-info-tobuy,
+main div.productDetails div.commodity-info-attrs~div span.commodity-info-tocart{
+	display: inline-block;
+	font-size: 1em;
+	padding-left:2em;
+	padding-right:2em;
+	border-radius: 2px;
+}
+main div.productDetails .details-info-tags .active{
+	display: inline-block;
+	margin-bottom: -1px;
+	background-color: #fff;
+	font-weight: 700;
+	border-top:2px solid #dd0000;
+}
+main div.productDetails .details-info-tags{
+	border-bottom: 1px solid #ccc;
+	margin:.74em 0;
+}
+main div.productDetails .details-info-tags span{
+	border: 1px solid #ccc;
+	border-bottom: 0 none;
+	float: left;
+	background-color: #f4f4f4;
+	margin-right:.45em;
+	padding:.23em 1.23em;
+	font-size:.78em;
+	cursor:pointer;
+}
+main div.productDetails .details-info-content span{
+	font-size: .44em;
+}
+main div.productDetails .details-info-content div.details-info-content-categorys{
+	height:3.572em;
+	padding: 1.25em 1em;
+	background-color: #f4f4f4;
+	border:1px solid #ccc;
+}
+main div.productDetails .details-info-content span.details-info-content-brand{
+	padding-right: 22em
+}
+main div.productDetails .details-info-content div.details-info-commentNum{
+	padding:1.25em 17em 1.25em 0;
+	vertical-align:bottom;
+}
+main div.productDetails .details-info-content .details-info-comments-list{
+	padding:1.25em 17em 0 0;
+
+}
+main div.productDetails .details-info-content .details-info-comments-list .comments-list-item{
+	width:666px;
+	margin:.88em
+}
+main div.productDetails .details-info-content .details-info-comments-list .comments-list-item span{
+	margin:.5em;
+	padding:.55em;
+}
+main div.productDetails .details-info-content .details-info-comments-list .comments-content{
+	display: block;
+	border-top: 1px solid #ccc;
+}
+main div.productDetails .details-info-content div.details-info-commentStar span{
+	display: block;
+}
+main div.productDetails .details-info-content div.details-info-comments-top>div{
+	display: inline-block;
+}
+main div.productDetails .details-info-content .details-info-comments{
+	border: 1px solid #ccc;
+	padding-left:7em;
+}
+main div.productDetails .details-info-content .details-info-history td{
+	font-size: .964em;
+	color:#444;
+}
+main div.productDetails .details-info-content div.details-info-history{
+	text-align: center;
+}
+main div.productDetails .details-info-content div.details-info-history table{
+	width:100%;
+}
+main div.productDetails .details-info-content div.details-info-history thead{
+	border-bottom: 2px solid #ccc;
+	padding:1em;
+}
+main div.productDetails .details-info-content div.details-info-history tr{
+	border-bottom: 1px dotted #ccc;
+	padding:1.25em;
+}
+main div.productDetails .details-info-content div.details-info-history tr.content-null{
+	height:6em;
+}
+main div.shoppingCart{
+	
+} 
+main div.shoppingCart .fa-shopping-cart{
+	font-size: 2.25em;
+	color:#444;
+}
+main div.shoppingCart div.shoppingCart-title{
+	margin:.5em .88em;
+}
+main div.shoppingCart div.shoppingCart-title h3{
+	display: inline-block;
+	font-family: Microsoft YaHei, STHeiti, sans-seri;
+	padding-left:.5em;
+}
+main div.shoppingCart-nav ul{
+	text-align: center;
+	color:#444;
+
+}
+main div.shoppingCart-nav li:nth-of-type(2n+1){
+	width:27%;
+	background-color: #f4f4f4;
+	margin-right:1em;
+	padding:.56em;
+	font-family: 微软雅黑;
+}
+main div.shoppingCart-nav li .fa-long-arrow-right{
+	margin:.74em 1em;
+	font-size: 1.7em;
+	color:#ccc;
+}
+main div.shoppingCart-nav li .fa-check-square-o{
+	margin-right:.45em;
+}
+main div.shoppingCart-sub-title{
+	font-family: 微软雅黑;
+}
+main div.shoppingCart div.shoppingCart-footer>div{
+	display: inline-block;
+	padding:.75em 1.1em;
+	font-size:.8em;
+}
+main div.shoppingCart div.shoppingCart-footer .shoppingCart-operation{
+	float:right;
+}
+main div.shoppingCart div.shoppingCart-footer .shoppingCart-operation span{
+	margin-right:.74em;
+	vertical-align: middle;
+}
+main div.shoppingCart-list table{
+	border:1px solid #dde;
+}
+main div.shoppingCart-list table thead td.commodityName{
+	width:38.75em;
+}
+main div.shoppingCart-list table tbody td.commodityName{
+	text-align: left;
+	padding-left:.74em;
+}
+main div.shoppingCart div.shoppingCart-footer>div div.clearCart{
+	padding:1em 1.1em;
+}
+main div.shoppingCart div.shoppingCart-footer>div span.continueBuy,
+main div.shoppingCart div.shoppingCart-footer>div.clearCart span,
+main div.shoppingCart div.shoppingCart-footer>div span.gotoOrderForm
+{
+	border: 1px solid #ccc;
+	padding:.45em .8em;
+	background-color: #ffe;
+	cursor:pointer;
+}
+main div.shoppingCart div.shoppingCart-footer>div span.gotoOrderForm
+{
+	border: 1px solid #dd0000;
+	padding:.88em 1.25em;
+	border-radius: 2px;
+	background-color: #dd0000;
+	color:#f7f8f8;
+	cursor: pointer;
+}
+main div.shoppingCart-list table thead,
+main div.shoppingCart-footer
+{
+	background-color: #f4f4f4
+}
+main div.shoppingCart-list tbody tr
+{
+	height:7.14em;
+	font-size:.78em;
+}
+main div.shoppingCart-list table  td
+{
+	text-align: center
+}
+main div.shoppingCart-list table  td>img
+{
+	height:5.71em;
+	width:5.71em;
+	border:1px solid #ccc;
+}
+main div.shoppingCart-list table thead td
+{
+	width:7.14em;
+	height:2.5em;
+}
+main div.shoppingCart-list table  td:first-of-type
+{
+	width:40em;
+	height:2.5em;
+	text-align: center;
+
+}
+main div.shoppingCart-footer{
+	height:5em;
+	padding:1em;
+}
+main div.shoppingCart-footer .totalMoney{
+	color: #cc0000;
+	font-size: 2.5em;
+	font-weight: 600;
+	font-family: 微软雅黑;
+}
+main div.orderFormInfo .shoppingCart-sub-title h5{
+	font-size:1.2em;
+	font-size: 微软雅黑;
+	color:#456;
+}
+main div.orderFormInfo form div.order-title span{
+	font-size: .99em;
+	font-weight: 700;
+}
+main div.orderFormInfo form div.order-title{	padding:.56em;
+	background-color: #efefef;
+}
+main div.orderFormInfo form label,
+main div.orderFormInfo form input,
+main div.orderFormInfo form a{
+	font-size:.78em;
+	font-weight: 100;
+	color:#555;
+}
+main div.orderFormInfo form .orderSection>div{
+	margin:.74em;
+}
+main div.orderFormInfo form .orderSection>div button{
+	text-align: left;
+	padding:.3em .88em;
+	font-size:.78em;
+}
+main div.orderFormInfo form label,
+main div.orderFormInfo form input{
+	font-size:.78em;
+}
+main div.orderFormInfo form .receipterInfo,
+main div.orderFormInfo form .parWay
+{
+	padding:.88em 5em;
+	text-align: right;
+	width:30em;
+}
+main div.orderFormInfo form .orderSection
+{
+	padding:.88em 5em;
+}
+main div.orderFormInfo form .freightInfo table td:first-of-type{
+	width:7.14em;
+}
+main div.orderFormInfo form .freightInfo table td:nth-of-type(2){
+	width:5.71em;
+}
+main div.orderFormInfo form .freightInfo table td{
+	text-align: center;
+}
+main div.orderFormInfo form .orderSection li{
+	display: block;
+	font-size:.8em
+}
+main div.orderFormInfo form .orderSection li label{
+	vertical-align: middle
+}
+main div.orderFormInfo form .freightInfo a{
+	padding-left:6.25em;
+}
+main div.orderFormInfo form .payWay a{
+	padding-left:6em;
+}
+main div.orderFormInfo form .payWay ul,
+main div.orderFormInfo form .payWay>label{
+	padding-left:4em;
+}
+main div.orderFormInfo form .payWay label{
+	margin-left:0.5em;
+	margin-right:.5em;
+}
+main div.orderFormInfo form .freightInfo>div,
+main div.orderFormInfo form .payWay>div{
+	padding-left: 11.5em;
+}
+main div.shoppingCart div.shoppingCart-footer .shoppingCart-operation input.payOrderForm{
+	border-radius: 2px;
+}
+main div.orderFormInfo form .orderSection>div.selectLocation select{
+	width:31%;
+	font-size: .5em;
+}
+main div.orderFormInfo form .orderSection>div.selectLocation>div{
+	display: inline-block;
+	width:59%;
+}
+main div.orderFormInfo form .orderSection>div.selectLocation input:first-of-type{
+	width:26%;
+}
+main div.orderFormInfo form .orderSection>div.selectLocation input:nth-of-type(2){
+	width:34%;
+}
+main div.orderFormInfo form .orderSection>div.selectLocation input:last-of-type{
+	width:34%;
+}
+/*order修改状态样式*/
+.ensure-ok{
+	border:none;
+	background-color:#fff;
+} 
+/*brand*/
+main div.brand-con div{
+	padding-left: 0;
+	padding-right: 0;
+	margin-left:0;
+	margin-right:0;
+}
+main div.brand-con div section{
+	border:1px solid #ccc;
+	display: inline-block;
+	width:24.7%;
+	padding:.74em 1em;
+	text-align: center;
+	border-top:0;
+}
+main div.brand-con div section img{
+	height:5.5em;
+	width:70%;
+}
+main div.brand-con div section span{
+	display: block;
+	font-size: .89em;
+	color:#555;
+}
+main div div.about-help-con-list dl:first-of-type{
+	background-color: #1985D9;
+}
+main div div.about-help-con-list dl:first-of-type dt{
+	border-top:0;
+	border-bottom: 0;
+}
+main div div.about-help-con-list dd:last-of-type{
+	border-bottom: 1px solid #ccc;
+}
+main div div.about-help-con-list dl>*{
+	padding:.9em 1.3em;
+	font-size:.78em;
+}
+main div div.about-help-con-list dl{
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+main div div.about-help-con-list dl dt{
+	border-bottom: 1px solid #ccc;
+}
+/*footer*/
+footer div.container-fluid{
+	padding-right:0;
+	padding-left:0;
+}
+footer div.web-map{
+	background-color: #1985d9;
+	height:15em;
+	padding:.78em 1em;
+}
+footer div.service section{
+	background:url(../images/website/icon_service.png) no-repeat;
+	background-size:1000%;
+	height:4.28em;
+	width:4.28em;
+	display: inline-block;
+	margin:0 1.8009em;
+} 
+footer div.service section:nth-of-type(8){
+	background-position:-30em !important;
+}
+footer div.service section:nth-of-type(9){
+	background-position: -34em !important;
+}
+footer div.service section:nth-of-type(10){
+	background-position: -39em !important;
+}
+footer div.web-map dl{
+	padding-right:.88em;
+	color:#eee;
+}
+footer div.web-map dl>dt{
+	font-size: 1em;
+
+	font-family: 微软雅黑;
+}
+footer div.web-map dl>dt{
+	margin-top: .66em;
+}
+footer div.web-map{
+	background-color: #1985d9;
+	height:15em;
+	padding:.78em 1em;
+
+}
+footer div.web-map dl>dd{
+	font-size:.78em;
+	margin-top: .66em;
+
+	
+}
+footer div.Copyright p{
+	text-align: center;
+	color:#999;
+}
+footer div.service{
+	margin-top:7em;
+}
+/*media*/
+@media (min-width:768px) and (device-width){
+	.navbar-default .navbar-header{
+		width:14.45%;
+	}
+}
+@media (min-width:992px){
+	main .flash-buy-left{
+		width:30.5%;
+	}
+	main .products-category{
+		width:14.667%;
+	}
+	main .products-category+div{
+		width:85.333%;
+	}
+}
+@media (device-width) and (max-width:1315px){
+	.container{
+		width:1300px;
+	}
+}
+

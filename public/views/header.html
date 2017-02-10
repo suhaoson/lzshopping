@@ -1,0 +1,57 @@
+<!--/**
+ * header page
+ */-->
+<div class="header-top" ng-controller="headerCtrl">
+	<div class="container" >
+ 		<div class="top-left">
+ 			您好，欢迎来到量正！
+ 			<span ng-show="Issession"  ui-sref="user">{{usernameLogined}}<i ng-click="signout()"><a>退出</a></i></span>
+ 			<span ng-hide="Issession" class="reg-log"><a ui-sref="login">[请登录]</a><a ui-sref="register">[免费注册]</a></span>
+ 		</div>
+ 		<div class="top-right" class="align-center">
+ 			<ul>
+ 				<li><a ui-sref="user.orderForm">我的订单</a></li>
+ 				<li class="user" ui-sref="user"><a>我的量格</a>
+ 						<ul>
+ 							<li><a ui-sref=".coupon">我的优惠券</a></li>
+ 							<li><a ui-sref=".inventoryNotice">我的收藏夹</a></li>
+ 							<li><a href="">商品定制</a></li>
+ 							<li><a href="">我的私人定制</a></li>
+ 						</ul>
+ 				</li>
+ 				<li><a href="">帮助中心</a></li>
+ 				<li><a href="" class="tel"><span class="fa fa-phone"></span><i>15566666666</i></a></li>
+ 				<li><a href="" class="server"><span class="fa fa-mobile"></span><i>售后服务</i></a></li>
+ 				<li><a href="" class="collect"><span class="fa fa-star"></span><i>收藏</i></a></li>
+ 			</ul>
+ 		</div>
+ 		<div class="clear"></div>
+ 	</div>
+ </div>
+ 	<div class="header-adv container">
+ 		<a href="http://359mai.100xuexi.com/"><img src="images/adv.jpg" alt="" /></a>
+ 	</div>
+	<div class="header-bottom container">
+		<div><a ui-sref="index"><img src="images/login.png" alt="量正logo" title="量正商城"/></a></div>
+		<div class="search">
+			<input type="text" name="search" ng-model="search"/><button type="button" name="search-btn" class="btn btn-primary" ui-sref="repertory({cid:'',classid:''})">搜索</button>
+		</div>
+		<div class="shopping-cart" ui-sref="shoppingCart">
+			<a  >
+				<span class="fa fa-shopping-cart"></span>
+				<bage>{{cartTotal}}</bage>
+				<i>购物车</i>
+				<span class="fa fa-angle-right"></span>
+			</a>
+		</div>
+		<div ng-controller="AlertWarningCtrl">
+  			<script type="text/ng-template" id="alert.html">
+    			<div ng-transclude></div>
+  			</script>
+
+  			<div uib-alert dismiss-on-timeout="1500" template-url="alert.html" ng-repeat="alert in alerts" ng-class="'alert-' + (alert.type || 'warning')" close="closeAlert($index)">{{alert.msg}}</div>
+		</div>
+	</div>
+	
+
+ 

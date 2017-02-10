@@ -1,0 +1,69 @@
+<!--signUp page-->
+<div class="container" ng-controller="SignUpCtrl">
+	<div class="row reg-con">
+		<div class="reg-log-con col-md-7">
+			<form name="form" ng-submit="signUp()" novalidate> 
+				<div class="register-title"><span>用户注册</span></div>
+				<div>
+				<!--限制输入就验证 
+					可以添加ng-model-options="{updateOn:'blur'}"当失去焦点的时候验证
+					可以添加ng-model-options="{debounce:1000}"当用户停止输入1000毫秒时验证-->
+					<label for="username">登录账号:</label>
+					<input type="text" name="username" ng-model="regFormData.username" class="username" id="username" placeholder="用户名/电子邮箱/手机号,至少四个字符" pattern="^[a-zA-Z0-9]{4,11}" required autocomplete="off" ng-class="form.username.$invalid&&form.username.$dirty?'error':''" valid-exists ng-model-options="{debounce:1000}"/>
+					
+				</div>
+				<div  class="user-valid"><span class="fa fa-spinner fa-pulse" ng-show="form.username.$pending&&form.username.$dirty"></span><span class="fa fa-user-times" ng-show="form.username.$error.validExists&&form.username.$dirty"></span><span ng-show="form.username.$valid&&form.username.$dirty">√</span></div>
+				<div>
+					<label for="password">密码:</label>
+					<input type="password" name="password" ng-model="regFormData.password" class="password" id="password" placeholder="6-12个字符" pattern="^[a-zA-Z0-9]{6,12}" required ng-class="form.password.$invalid&&form.password.$dirty?'error':''"/>
+				</div>
+				<div>
+					<label for="pwdAgain">密码:</label>
+					<input type="password" name="pwdAgain" ng-model="regFormData.pwdAgain" class="pwdAgain" id="pwdAgain" placeholder="再次填写密码" pattern="^[a-zA-Z0-9]{6,12}" required ng-class="form.pwdAgain.$invalid&&form.pwdAgain.$dirty || password!=pwdAgain?'error':''"/>
+				</div>
+				<div>
+					<label for="name">姓名:</label>
+					<input type="text" name="name" ng-model="regFormData.name" class="name" id="name" placeholder="请输入中文" pattern="^[\u4E00-\u9FA5]{3,6}" required ng-class="form.name.$invalid&&form.name.$dirty?'error':''"/>
+				</div>
+				<div>
+					<label for="address">联系地址:</label>
+					<input type="text" name="address" ng-model="regFormData.address" class="address" id="address" pattern="^[\u4E00-\u9FA5]{4,6}" required ng-class="form.address.$invalid&&form.address.$dirty?'error':''"/>
+				</div>
+				<div>
+					<label for="telephone">联系方式:</label>
+					<input type="text" name="telephone" ng-model="regFormData.telephone" class="telephone" id="telephone"  pattern="^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$" required ng-class="form.telephone.$invalid&&form.telephone.$dirty?'error':''"/>
+				</div>
+				<div>
+					<label for="zCode">邮编:</label>
+					<input type="text" name="zCode" ng-model="regFormData.zCode" class="zCode" id="zCode" pattern="[0-9]{6}" ng-class="form.zCode.$invalid&&form.zCode.$dirty?'error':''"/>
+				</div>
+				<div>
+					<label for="birthday">出生日期:</label>
+					<input type="date" name="birthday" ng-model="regFormData.birthday" class="birthday" id="birthday" ng-class="form.birthday.$invalid&&form.birthday.$dirty?'error':''"/>
+				</div>
+				<!--<div><label for=""></label></div>-->
+				<div>
+					<label for="valid-num">验证码:</label>
+					<div class="valid-container valid-code" code-valid></div>
+					<input type="text" name="validNum" ng-model="regFormData.$.paramvalidNum"  class="valid-num" placeholder="填写验证码"/>
+					 
+				</div>
+				<div>
+					<input type="checkbox" name="agreement" is-disabled class='agreement' checked/>
+					<label for="remeber">我已同意<a href="">会员协议</a>和<a href="">隐私协议</a></label>
+				</div>
+				<div>
+					<input type="submit" name="login" class="btn btn-warning" value="注册" ng-disabled="form.$invalid"/>
+				</div>
+			
+				
+			</form>
+		</div>
+		<div class="log-to col-md-5">
+			<div class="log">
+				<span>已有会员账号账号请直接登录</span>
+				<span class="btn btn-danger" ui-sref="login">转到登录页</span>
+			</div>
+		</div>
+	</div>
+</div>

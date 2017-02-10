@@ -1,0 +1,37 @@
+{ 
+    "_id" : "BkuDJCkUg", 
+    "address" : "河南郑州", 
+    "zCode" : NumberInt(450000), 
+    "name" : "朱志豪", 
+    "freight" : "自营配送", 
+    "username" : "zzh", 
+    "orderid" : "::11483886431801", 
+    "time" : 1.483886431801E12, 
+    "cartLS" : [
+        {
+            "carts" : NumberInt(10110000), 
+            "cartCount" : NumberInt(1)
+        }, 
+        {
+            "carts" : NumberInt(30110000), 
+            "cartCount" : NumberInt(1)
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "SJMweRWIl", 
+    "address" : "河南郑州", 
+    "zCode" : NumberInt(450000), 
+    "name" : "朱志豪", 
+    "username" : "zzh", 
+    "orderid" : "::11484017753676", 
+    "time" : 1.484017753676E12, 
+    "cartLS" : [
+        {
+            "carts" : NumberInt(10110000), 
+            "cartCount" : NumberInt(1)
+        }
+    ], 
+    "__v" : NumberInt(0)
+}

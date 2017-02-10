@@ -1,0 +1,27 @@
+{ 
+    "_id" : "HJBQ4ESHl", 
+    "username" : "zzh", 
+    "password" : "zzh123", 
+    "name" : "朱志豪", 
+    "address" : "河南郑州", 
+    "telephone" : 15617976306.0, 
+    "zCode" : NumberInt(450000), 
+    "birthday" : ISODate("1994-08-23T16:00:00.000+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "SkmNraJLx", 
+    "username" : "18339966143", 
+    "password" : "zzh123", 
+    "name" : "朱志豪", 
+    "address" : "河南郑州", 
+    "telephone" : 15617976310.0, 
+    "zCode" : NumberInt(450000), 
+    "birthday" : ISODate("1994-08-23T16:00:00.000+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : "SJeXLGG8l", 
+    "birthday" : null, 
+    "__v" : NumberInt(0)
+}

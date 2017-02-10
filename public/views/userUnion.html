@@ -1,0 +1,112 @@
+<!--userUnion-->
+	
+<div class="container" ng-controller="UserInfoCtrl">
+	<div class="row">
+		<div class="col-md-2 user-con-list">
+			<dl>
+				<dt>交易管理</dt>
+				<dd><a ui-sref=".orderForm">我的订单</a></dd>
+				<dd><a ui-sref=".returnExchange">申请退换货</a></dd>
+			</dl>
+			<dl>
+				<dt>评论咨询管理</dt>
+				<dd><a ui-sref=".comment">评论与咨询</a></dd>
+			</dl>
+			<dl>
+				<dt>我的账户</dt>
+				<dd><a ui-sref=".collection">商品收藏</a></dd>
+				<dd><a ui-sref=".inventoryNotice">到货通知</a></dd>
+				<dd><a ui-sref=".coupon">我的优惠券</a></dd>
+				<dd><a ui-sref=".imprest">我的预存款</a></dd>
+				<dd><a ui-sref=".recharge">我的预充值</a></dd>
+			</dl>
+			<dl>
+				<dt>个人信息管理</dt>
+				<dd><a ui-sref=".innerMessage">站内信</a></dd>
+				<dd><a ui-sref=".userInfo">个人信息</a></dd>
+				<dd><a ui-sref=".userSafety">安全中心</a></dd>
+				<dd><a ui-sref=".shoppingAddress">收货地址</a></dd>
+			</dl>
+			
+		</div>
+		<div class="col-md-10 user-con" ui-view>
+			<div class="user-union">
+				<div class="user-info">
+					<div class="title">
+						<span>您好 <i>{{usernameLogined}}</i>,欢迎进入会员中心</span>
+					</div>
+					<div class="outline-info">
+						<span>
+							您目前是[<i>注册会员</i>]
+						</span>
+						<span>经验值是 <i>0</i></span><span>预存款余额:￥<i>0.00</i><a href="">预存款充值>></a></span>
+					</div>
+				</div>
+				<div class="order-form-info">
+					<span>交易提醒:</span>
+					<ul>
+						<li><a href=""><span>所有订单</span><i>0</i></a></li>
+						<li><a href=""><span>未付款</span><i>0</i></a></li>
+						<li><a href=""><span>待发货</span><i>0</i></a></li>
+						<li><a href=""><span>待收货</span><i>0</i></a></li>
+						<li><a href=""><span>已购买</span><i>0</i></a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="user-order-form-outline">
+				<div class="user-con-table">
+					<div class="title">
+						<span>最近的订单</span>
+					</div>
+					<table >
+						<tr>
+							<td>订单号</td>
+							<td>金额</td>
+							<td>下单时间</td>
+							<td>订单状态</td>
+							<td>支付方式</td>
+							<td>操作</td>
+						</tr>
+						<tr class="content-null"><td colspan="6">暂无订单</td></tr>
+						<tr>
+							<td>订单号</td>
+							<td>金额</td>
+							<td>下单时间</td>
+							<td>订单状态</td>
+							<td>支付方式</td>
+							<td>操作</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="user-order-form-outline">
+				<div class="user-con-table">
+					<div class="title">
+						<span>最近的订单</span>
+					</div>
+					<table >
+						<tr>
+							<td>订单号</td>
+							<td>金额</td>
+							<td>下单时间</td>
+							<td>订单状态</td>
+							<td>支付方式</td>
+							<td>操作</td>
+						</tr>
+						<tr class="content-null"><td colspan="6">暂无订单</td></tr>
+						<tr>
+							<td>订单号</td>
+							<td>金额</td>
+							<td>下单时间</td>
+							<td>订单状态</td>
+							<td>支付方式</td>
+							<td>操作</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>

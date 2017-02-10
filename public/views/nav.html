@@ -1,0 +1,56 @@
+<!--/**
+ * nav page
+ */-->
+<div class="container" ng-controller="CollapseCtrl">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" ng-click="isNavCollapsed=!isNavCollapsed">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand nav-aside-title" href="javascript:;" ng-click="isCollapsed = !isCollapsed">所有商品类别</a>
+		</div>
+		<div class="collapse navbar-collapse" uib-collapse="isNavCollapsed">
+			<ul class="nav navbar-nav">
+				<li><a ui-sref="index">首页</a></li>
+				<li><a ui-sref="user">会员中心</a></li>
+				<li><a ui-sref="brand">品牌区</a></li>
+				<li><a ui-sref="help">帮助中心</a></li>
+				<li><a ui-sref="about">关于我们</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+<!-- 重写 -->
+
+	
+
+<!-- 重写 -->
+
+	<div>
+		<div class="nav-aside" uib-collapse="isCollapsed">
+			<div class="row">
+				<ul class="col-md-2 nav-aside-category" nav-aside-con>
+					<li  data-index="0" ng-repeat="categorys in categoryData">
+						<a ui-sref="repertory({cid:{{categorys.cid}},classid:''})"><span class="fa fa-mobile"></span>{{categorys.category}}</a>
+						<ul class="nav-aside-classify" >
+							<li ng-repeat="classifys in categorys.classify"><a ui-sref="repertory({cid:{{categorys.cid}},classid:classifys.classid})">{{classifys.class}}</a></li>
+						</ul>
+					</li>
+					
+			</div>
+		</div>
+	</div>
+
+</div>
+ <style>
+ 	.horizontal-collapse {
+    	height: 70px;
+  	}
+  	.navbar-collapse.in {
+    	overflow-y: hidden;
+  	}
+
+ </style>

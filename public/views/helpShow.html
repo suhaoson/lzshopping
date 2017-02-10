@@ -1,0 +1,42 @@
+<div class="container about-con">
+	<div class="nav-min">
+		<a ui-sref="index">
+			<i class="fa fa-home"></i><span>首页</span>
+		</a>
+		<a href="">
+			<i class="fa fa-angle-right"></i><span>{{categoryOneData[0].category}}</span>
+		</a>
+		<a href="javaScript:;" ng-repeat="classify in classify">
+			<i class="fa fa-angle-right"></i><span>{{classify.class}}</span>
+		</a>
+	</div>
+	<div class="row">
+		<div class="col-md-2 about-help-con-list">
+			<dl>
+				<dt>关于我们</dt>
+			</dl>
+			<dl>
+				<dt>新手上路</dt>
+			</dl>
+			<dl>
+				<dt>购物指南</dt>
+				<dd><a ui-sref="">优惠券介绍</a></dd>
+				<dd><a ui-sref="">订单说明</a></dd>
+				<dd><a ui-sref="">价格保护</a></dd>
+			</dl>
+			<dl>
+				<dt>支付配送方式</dt>
+				<dd><a ui-sref="">在线支付</a></dd>
+				<dd><a ui-sref="">预付款</a></dd>
+				<dd><a ui-sref="">物流配送</a></dd>
+			</dl>
+			<dl>
+				<dt>售后服务</dt>
+				<dd><a ui-sref="">退换货流程</a></dd>
+			</dl>
+		</div>
+		<div class="col-md-10"  ui-view>
+			
+		</div>
+	</div>
+</div>

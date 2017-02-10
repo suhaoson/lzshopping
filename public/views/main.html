@@ -1,0 +1,80 @@
+<!--/**
+ * main page
+ */-->
+ <div class="container" ng-app="Main" ng-controller="mainCtrl">
+ 	<div class="hot-products row">
+	 	<div class="flash-buy col-md-6">
+	 		<div class="row">
+ 				<div class="flash-buy-left col-md-4">
+		 			<span class="flash-buy-logo">
+		 				<a href="">
+		 					<img src="images/website/flash-purchase/mkxx-logo.jpg">
+		 				</a>
+		 			</span><span class="split-line"></span>
+		 			<span class="flash-buy-brand">
+		 				<a href="">马可小熊童装专场</a>
+		 			</span>
+		 			<span class="flash-buy-info">低至两折</span>
+		 			<span class="buy-now">
+		 				<a href="">立即选购</a>
+		 			</span>
+		 		</div>
+		 		<a href="#">
+			 		<div class="col-md-8 flash-buy-right">
+			 			<img src="images/website/flash-purchase/mkxx-show.jpg">
+			 			<span class="flash-buy-discount">2件八折</span>
+			 		</div>
+	 			</a>
+	 		</div>
+	 	</div>
+	 	<div class="col-md-6 hot-recommends">
+	 		<section class='hot-recommends-item'>
+	 			<a href="#"><img src="images/website/flash-purchase/1501.png"></a>
+	 		</section><section class='hot-recommends-item'>
+	 			<a href=""><img src="images/website/flash-purchase/1502.png"></a>
+	 		</section><section class='hot-recommends-item'>
+	 			<a href=""><img src="images/website/flash-purchase/1503.png"></a>
+	 		</section>
+	 	</div>
+ 	</div>
+ 	<div  class="category-products-show">
+ 		<section class="row categorySection" ng-repeat="categorys in categoryData">
+ 			<div class="products-category col-md-2">
+ 				<div class="category-title">
+ 					<i class="category-index">{{categorys.cid}}F</i>
+ 					<span>{{categorys.category}}</span>
+ 				</div>
+ 				<div>
+ 					<section ng-repeat="classifys in categorys.classify">
+ 						<span><a href="">{{classifys.class}}</a></span>
+ 					</section>
+ 				</div>
+ 			</div>
+ 			<div class="col-md-10">
+ 				<div class="row products-hot-top">
+ 					<div class="col-md-8">
+ 						<banner ui-view="banner"></banner>
+ 					</div>
+ 					<div class="products-recommend col-md-4">
+ 						<div class="products-recommend-top">
+ 							<section class="products-recommend-item">
+ 								<a href="">
+ 									<img src="images/products/2011.jpg">
+ 								</a>
+ 							</section><section class="products-recommend-item">
+ 								<a href="">
+ 									<img src="images/products/2012.jpg">
+ 								</a>
+ 							</section>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="products-show products-hot-bottom ">
+ 					<section class="products-show-item" ng-repeat="hotitem in categorys.hotImg">
+ 						<a href=""><img src="images/products/210/{{hotitem}}.jpg"></a>
+ 					</section>
+ 				</div>
+ 			</div>
+ 		</section>
+ 	</div>
+ </div>
